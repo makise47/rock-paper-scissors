@@ -18,11 +18,11 @@ function rockfn() {
             document.getElementById("opline").innerHTML+=`Aww rock loses to paper! You have ${userwins} points while Makise has ${botwins} points! <br/>`;
         }
     }
-    if (userwins >=5) {
+    if (userwins >=5 && end != 1) {
         document.getElementById("opline").innerHTML+=`<br/> Yay! You have won the game! <br/> Reload the page to play again!`;
         end = 1;
     }
-    if (botwins >=5) {
+    if (botwins >=5 && end != 1) {
         document.getElementById("opline").innerHTML+=`<br/> Tough luck :( You lost to Makise. <br/> Reload the page to play again!`;
         end = 1;
     }
@@ -44,11 +44,11 @@ function paperfn() {
             document.getElementById("opline").innerHTML+=`It's a tie! You have ${userwins} points while Makise has ${botwins} points! <br/>`;
         }
     }
-    if (userwins >=5) {
+    if (userwins >=5 && end != 1) {
         document.getElementById("opline").innerHTML+=`<br/> Yay! You have won the game! <br/> Reload the page to play again!`;
         end = 1;
     }
-    if (botwins >=5) {
+    if (botwins >=5 && end != 1) {
         document.getElementById("opline").innerHTML+=`<br/> Tough luck :( You lost to Makise. <br/> Reload the page to play again!`;
         end = 1;
     }
@@ -71,11 +71,11 @@ function scissorsfn() {
             document.getElementById("opline").innerHTML+=`Scissor beats paper! You have ${userwins} points while Makise has ${botwins} points! <br/>`;
         }
     }
-    if (userwins >=5) {
+    if (userwins >=5 && end != 1) {
         document.getElementById("opline").innerHTML+=`<br/> Yay! You have won the game! <br/> Reload the page to play again!`;
         end = 1;
     }
-    if (botwins >=5) {
+    if (botwins >=5 && end != 1) {
         document.getElementById("opline").innerHTML+=`<br/> Tough luck :( You lost to Makise. <br/> Reload the page to play again!`;
         end = 1;
     }
