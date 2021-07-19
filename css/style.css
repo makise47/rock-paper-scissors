@@ -1,0 +1,97 @@
+.container {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 1em;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    width: 50%;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 5px #bbbbbb;
+    transform: translate(50%, 10%);
+    position: fixed;
+    display: grid;
+    grid-template-rows: 130px 100px 500px;
+    grid-template-areas: 
+    "main"
+    "buttons"
+    "opbox";
+
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 80px 50px;
+    grid-template-areas:
+    "title"
+    "info";
+}
+
+.title {
+    grid-area: title;
+    align-self: center;
+    justify-self: center;
+}
+
+.info {
+    grid-area: info;
+    align-self: center;
+    justify-self: center;
+}
+
+.buttons {
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas:
+    "rock paper scissors";
+}
+
+.rock {
+    grid-area: rock;
+    width: 30%;
+    height: 50px;
+    align-self: center;
+    justify-self: center;
+    font-weight: bold;
+}
+
+.paper {
+    grid-area: paper;
+    width: 30%;
+    height: 50px;
+    align-self: center;
+    justify-self: center;
+    font-weight: bold;
+}
+
+.scissors {
+    grid-area: scissors;
+    width: 30%;
+    height: 50px;
+    align-self: center;
+    justify-self: center;
+    font-weight: bold;
+}
+
+.opbox {
+    grid-area: opbox;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "opline scorecard";
+}
+
+#opline {
+    grid-area: opline;
+    font-weight:bold;
+    margin-left: 30px;
+    overflow:auto;
+}
+
+#scorecard {
+    grid-area: scorecard;
+    font-weight: bold;
+    margin-left: 50px;
+}
