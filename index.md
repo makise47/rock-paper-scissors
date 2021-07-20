@@ -12,7 +12,7 @@
     <body>
         <div class="container">
             <div class="main">
-                <h1 class="title">Play a game of Rock-Paper-Scissors with Makise!</h1>
+                <p class="title">Play a game of Rock-Paper-Scissors with Makise!</p>
                 <h2 class="info">First player to get to 5 wins!</h2>
             </div>
 
@@ -29,4 +29,4 @@
             </div>
         </div>
     </body>
-</html>
+    </html>

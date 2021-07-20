@@ -3,8 +3,8 @@
     font-style: normal;
     font-size: 1em;
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-    width: 50%;
-    height: auto;
+    width: 50vw;
+    height: 80vh;
     border-radius: 50px;
     box-shadow: 0px 0px 10px 5px #bbbbbb;
     transform: translate(50%, 10%);
@@ -15,7 +15,6 @@
     "main"
     "buttons"
     "opbox";
-
 }
 
 .main {
@@ -28,9 +27,13 @@
 }
 
 .title {
+    font-size: 32px;
+    font-weight: bold;
     grid-area: title;
     align-self: center;
     justify-self: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .info {
@@ -81,6 +84,8 @@
     grid-template-columns: 50% 50%;
     grid-template-areas:
     "opline scorecard";
+    margin-bottom: 10px;
+    overflow: auto;
 }
 
 #opline {
